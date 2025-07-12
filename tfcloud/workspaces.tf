@@ -6,6 +6,6 @@ resource "tfe_workspace" "tfcloud-workspaces" {
   vcs_repo {
     branch                     = "main"
     identifier                 = var.github-repo
-    github_app_installation_id = var.github_app_id
+    github_app_installation_id = var.github-app-id
   }
 }
