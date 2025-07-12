@@ -15,10 +15,6 @@ jobs:
     - uses: actions/setup-python@v3
     - uses: hashicorp/setup-terraform@v3
     - uses: terraform-linters/setup-tflint@v4
-    - name: Install checkov
-      uses: jaxxstorm/action-install-gh-release@v1.10.0
-      with:
-        repo: bridgecrewio/checkov
     - name: Install terraform-docs
       uses: jaxxstorm/action-install-gh-release@v1.10.0
       with:
