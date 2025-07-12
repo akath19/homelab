@@ -42,3 +42,11 @@ resource "tfe_workspace" "gcp" {
     github_app_installation_id = data.tfe_github_app_installation.github-app.id
   }
 }
+
+resource "tfe_workspace" "gcp-dynamic-credentials" {
+  name                  = "gcp-dynamic-credentials"
+  organization          = var.organization
+  auto_apply            = true
+  file_triggers_enabled = true
+  queue_all_runs        = true
+}
