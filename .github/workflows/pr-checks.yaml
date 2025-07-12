@@ -1,3 +1,5 @@
+run-name: PR Checks for Commit ${{ github.sha }}
+
 on:
   pull_request:
     branches:
@@ -9,6 +11,7 @@ permissions:
 
 jobs:
   pre-commit:
+    name: re-Commit
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
