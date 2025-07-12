@@ -56,35 +56,35 @@ resource "tfe_workspace" "gcp" {
 
 resource "tfe_variable" "gcp-provider-auth" {
   key          = "TFC_GCP_PROVIDER_AUTH"
-  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_variables.TFC_GCP_PROVIDER_AUTH
+  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_wariables.TFC_GCP_PROVIDER_AUTH
   category     = "env"
   workspace_id = tfe_workspace.gcp.id
 }
 
 resource "tfe_variable" "gcp-project-number" {
   key          = "TFC_GCP_PROJECT_NUMBER"
-  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_variables.TFC_GCP_PROJECT_NUMBER
+  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_wariables.TFC_GCP_PROJECT_NUMBER
   category     = "env"
   workspace_id = tfe_workspace.gcp.id
 }
 
 resource "tfe_variable" "gcp-service-account" {
   key          = "TFC_GCP_RUN_SERVICE_ACCOUNT_EMAIL"
-  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_variables.TFC_GCP_RUN_SERVICE_ACCOUNT_EMAIL
+  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_wariables.TFC_GCP_RUN_SERVICE_ACCOUNT_EMAIL
   category     = "env"
   workspace_id = tfe_workspace.gcp.id
 }
 
 resource "tfe_variable" "gcp-workload-pool" {
   key          = "TFC_GCP_WORKLOAD_POOL_ID"
-  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_variables.TFC_GCP_WORKLOAD_POOL_ID
+  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_wariables.TFC_GCP_WORKLOAD_POOL_ID
   category     = "env"
   workspace_id = tfe_workspace.gcp.id
 }
 
 resource "tfe_variable" "gcp-workload-provider" {
   key          = "TFC_GCP_WORKLOAD_PROVIDER_ID"
-  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_variables.TFC_GCP_WORKLOAD_PROVIDER_ID
+  value        = data.tfe_outputs.gcp-dynamic-credentials.values.tfc_workspace_wariables.TFC_GCP_WORKLOAD_PROVIDER_ID
   category     = "env"
   workspace_id = tfe_workspace.gcp.id
 }
