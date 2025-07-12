@@ -9,10 +9,10 @@ variable "organization" {
   description = "Terraform Cloud Organization ID"
 }
 
-variable "github_app_id" {
-  type      = string
-  sensitive = true
-  default   = "Github App Installation ID for VCS Integration"
+variable "github-app-id" {
+  type        = string
+  sensitive   = true
+  description = "Github App Installation ID for VCS Integration"
 }
 
 variable "github-repo" {
