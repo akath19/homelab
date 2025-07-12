@@ -6,6 +6,5 @@ resource "cloudflare_dns_record" "truenas-dns-entry" {
   comment  = "NPM Entry for ${each.key} service"
   content  = var.npm-ts-ip
   proxied  = false
-  tags     = ["backend:npm-truenas"]
   ttl      = 1
 }
