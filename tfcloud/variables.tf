@@ -9,7 +9,7 @@ variable "organization" {
   description = "Terraform Cloud Organization ID"
 }
 
-variable "github_app_id" {
+variable "github-app-id" {
   type        = string
   sensitive   = true
   description = "Github App Installation ID for VCS Integration"

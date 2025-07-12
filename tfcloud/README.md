@@ -30,8 +30,8 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_api-token"></a> [api-token](#input\_api-token) | Terraform Cloud API Token | `string` | n/a | yes |
+| <a name="input_github-app-id"></a> [github-app-id](#input\_github-app-id) | Github App Installation ID for VCS Integration | `string` | n/a | yes |
 | <a name="input_github-repo"></a> [github-repo](#input\_github-repo) | Github Repo ID for VCS Integration | `string` | n/a | yes |
-| <a name="input_github_app_id"></a> [github\_app\_id](#input\_github\_app\_id) | Github App Installation ID for VCS Integration | `string` | n/a | yes |
 | <a name="input_organization"></a> [organization](#input\_organization) | Terraform Cloud Organization ID | `string` | n/a | yes |
 
 ## Outputs
