@@ -11,7 +11,6 @@ variable "organization" {
 
 variable "github-app-id" {
   type        = string
-  sensitive   = true
   description = "Github App Installation ID for VCS Integration"
 }
 

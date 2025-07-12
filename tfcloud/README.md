@@ -24,6 +24,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [tfe_workspace.tfcloud-workspaces](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/workspace) | resource |
+| [tfe_github_app_installation.github-app](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/data-sources/github_app_installation) | data source |
 
 ## Inputs
 
