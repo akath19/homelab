@@ -1,0 +1,21 @@
+variable "api-token" {
+  type        = string
+  sensitive   = true
+  description = "Terraform Cloud API Token"
+}
+
+variable "organization" {
+  type        = string
+  description = "Terraform Cloud Organization ID"
+}
+
+variable "github_app_id" {
+  type      = string
+  sensitive = true
+  default   = "Github App Installation ID for VCS Integration"
+}
+
+variable "github-repo" {
+  type        = string
+  description = "Github Repo ID for VCS Integration"
+}
