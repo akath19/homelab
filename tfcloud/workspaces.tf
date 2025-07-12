@@ -1,6 +1,7 @@
 resource "tfe_workspace" "tfcloud-workspaces" {
-  name         = "tfcloud-workspaces"
-  organization = var.organization
+  name              = "tfcloud-workspaces"
+  organization      = var.organization
+  working_directory = "tfcloud"
 
   vcs_repo {
     branch                     = "main"
