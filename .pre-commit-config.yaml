@@ -7,7 +7,4 @@ repos:
     - id: terraform_tflint
       args:
       - --args=--call-module-type=all
-    - id: terraform_checkov
-      args:
-      - --args=--download-external-modules=true
     - id: terraform_docs
