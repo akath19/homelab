@@ -31,7 +31,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_api-token"></a> [api-token](#input\_api-token) | Terraform Cloud API Token | `string` | n/a | yes |
 | <a name="input_github-repo"></a> [github-repo](#input\_github-repo) | Github Repo ID for VCS Integration | `string` | n/a | yes |
-| <a name="input_github_app_id"></a> [github\_app\_id](#input\_github\_app\_id) | n/a | `string` | `"Github App Installation ID for VCS Integration"` | no |
+| <a name="input_github_app_id"></a> [github\_app\_id](#input\_github\_app\_id) | Github App Installation ID for VCS Integration | `string` | n/a | yes |
 | <a name="input_organization"></a> [organization](#input\_organization) | Terraform Cloud Organization ID | `string` | n/a | yes |
 
 ## Outputs

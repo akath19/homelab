@@ -10,9 +10,9 @@ variable "organization" {
 }
 
 variable "github_app_id" {
-  type      = string
-  sensitive = true
-  default   = "Github App Installation ID for VCS Integration"
+  type        = string
+  sensitive   = true
+  description = "Github App Installation ID for VCS Integration"
 }
 
 variable "github-repo" {
