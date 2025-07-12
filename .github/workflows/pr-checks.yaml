@@ -1,0 +1,29 @@
+run-name: PR Checks for Commit ${{ github.sha }}
+
+on:
+  pull_request:
+    branches:
+      - main
+      
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  pre-commit:
+    name: Pre-Commit
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - uses: hashicorp/setup-terraform@v3
+    - uses: terraform-linters/setup-tflint@v4
+    - name: Install terraform-docs
+      uses: jaxxstorm/action-install-gh-release@v1.10.0
+      with:
+        repo: terraform-docs/terraform-docs
+    - uses: pre-commit/action@v3.0.1
+      id: pre-commit
+    - name: Print Output
+      id: output
+      run: echo "${{ steps.pre-commit.outputs.result }}"
