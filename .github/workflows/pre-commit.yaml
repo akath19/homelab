@@ -8,18 +8,23 @@ permissions:
   pull-requests: write
 
 jobs:
-  ci-checks:
-    name: Pre-Commit
+  pre-commit:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Run pre-commit checks
-        id: run-pre-commit
-        uses: mantulen/pre-commit-action@v0.0.2
-
-      - name: Print Output
-        id: output
-        run: echo "${{ steps.run-pre-commit.outputs.result }}"
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - uses: hashicorp/setup-terraform@v3
+    - uses: terraform-linters/setup-tflint@v4
+    - name: Install checkov
+      uses: jaxxstorm/action-install-gh-release@v1.10.0
+      with:
+        repo: bridgecrewio/checkov
+    - name: Install terraform-docs
+      uses: jaxxstorm/action-install-gh-release@v1.10.0
+      with:
+        repo: terraform-docs/terraform-docs
+    - uses: pre-commit/action@v3.0.1
+      id: pre-commit
+    - name: Print Output
+      id: output
+      run: echo "${{ steps.pre-commit.outputs.result }}"
