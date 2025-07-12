@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   pre-commit:
-    name: re-Commit
+    name: Pre-Commit
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
