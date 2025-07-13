@@ -1,3 +1,7 @@
+locals {
+  ips = concat(var.cloudflare-ranges, var.current-home-ip)
+}
+
 resource "google_compute_firewall" "monitoring" {
   name    = "monitoring-vm"
   network = google_compute_network.vpc.name
@@ -13,7 +17,5 @@ resource "google_compute_firewall" "monitoring" {
 
   direction = "INGRESS"
 
-  source_ranges = [
-    var.current-home-ip
-  ]
+  source_ranges = local.ips
 }
