@@ -14,6 +14,7 @@ resource "google_compute_firewall" "monitoring" {
   direction = "INGRESS"
 
   source_ranges = [
-    var.current-home-ip
+    var.current-home-ip,
+    var.cloudflare-ranges
   ]
 }

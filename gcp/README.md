@@ -37,6 +37,7 @@ This module holds all my GCP Configs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_cloudflare-ranges"></a> [cloudflare-ranges](#input\_cloudflare-ranges) | Cloudflare ranges for connection to monitoring VM | `string` | n/a | yes |
 | <a name="input_current-home-ip"></a> [current-home-ip](#input\_current-home-ip) | Current home IP for connection to monitoring VM | `string` | n/a | yes |
 | <a name="input_project"></a> [project](#input\_project) | Project ID to create resources in | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Region to create resources in | `string` | n/a | yes |
