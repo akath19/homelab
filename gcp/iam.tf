@@ -9,12 +9,16 @@ module "tfe-sa-iam" {
     "roles/iam.securityAdmin" = [
       "serviceAccount:${var.tfe-sa}"
     ]
+    "roles/iam.serviceAccountAdmin" = [
+      "serviceAccount:${var.tfe-sa}"
+    ]
     "roles/compute.admin" = [
       "serviceAccount:${var.tfe-sa}"
     ]
     "roles/compute.serviceAgent" = [
       "serviceAccount:${var.tfe-sa}"
     ]
+
   }
 }
 
