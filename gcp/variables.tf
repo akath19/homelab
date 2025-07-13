@@ -24,6 +24,6 @@ variable "current-home-ip" {
 }
 
 variable "cloudflare-ranges" {
-  type        = string
+  type        = list(string)
   description = "Cloudflare ranges for connection to monitoring VM"
 }
