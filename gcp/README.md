@@ -18,7 +18,9 @@ This module holds all my GCP Configs
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_tfe-sa-iam"></a> [tfe-sa-iam](#module\_tfe-sa-iam) | terraform-google-modules/iam/google//modules/projects_iam | ~> 8.0 |
 
 ## Resources
 
@@ -33,6 +35,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_project"></a> [project](#input\_project) | Project ID to create resources in | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Region to create resources in | `string` | n/a | yes |
+| <a name="input_tfe-sa"></a> [tfe-sa](#input\_tfe-sa) | Terraform Cloud SA email | `string` | n/a | yes |
 
 ## Outputs
 
