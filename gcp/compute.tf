@@ -16,7 +16,8 @@ resource "google_compute_instance" "monitoring" {
   }
 
   network_interface {
-    network = "vpc"
+    network    = "vpc"
+    subnetwork = var.region
 
     access_config {
       nat_ip       = google_compute_address.monitoring.address
