@@ -18,3 +18,13 @@ resource "cloudflare_dns_record" "monitoring-vm-gcp" {
   proxied = true
   ttl     = 1
 }
+
+resource "cloudflare_dns_record" "ntfy-vm-gcp" {
+  zone_id = var.dns-zone-id
+  name    = "ntfy.${var.zone-name}"
+  type    = "A"
+  comment = "NTFY VM in GCP"
+  content = data.tfe_outputs.gcp.values.monitoring-vm-ip
+  proxied = true
+  ttl     = 1
+}
