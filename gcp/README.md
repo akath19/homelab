@@ -26,8 +26,11 @@ This module holds all my GCP Configs
 
 | Name | Type |
 |------|------|
+| [google_compute_address.monitoring](https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_address) | resource |
+| [google_compute_instance.monitoring](https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_instance) | resource |
 | [google_compute_network.vpc](https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_network) | resource |
 | [google_compute_subnetwork.subnet](https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_subnetwork) | resource |
+| [google_service_account.monitoring-vm](https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/service_account) | resource |
 
 ## Inputs
 
@@ -36,6 +39,7 @@ This module holds all my GCP Configs
 | <a name="input_project"></a> [project](#input\_project) | Project ID to create resources in | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Region to create resources in | `string` | n/a | yes |
 | <a name="input_tfe-sa"></a> [tfe-sa](#input\_tfe-sa) | Terraform Cloud SA email | `string` | n/a | yes |
+| <a name="input_zone"></a> [zone](#input\_zone) | Zone within region to create resources in | `string` | n/a | yes |
 
 ## Outputs
 

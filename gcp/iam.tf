@@ -12,5 +12,14 @@ module "tfe-sa-iam" {
     "roles/compute.admin" = [
       "serviceAccount:${var.tfe-sa}"
     ]
+    "roles/compute.serviceAgent" = [
+      "serviceAccount:${var.tfe-sa}"
+    ]
   }
+}
+
+
+resource "google_service_account" "monitoring-vm" {
+  account_id   = "monitoring"
+  display_name = "Monitoring VM"
 }
