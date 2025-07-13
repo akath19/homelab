@@ -43,5 +43,7 @@ This module holds all my GCP Configs
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_monitoring-vm-ip"></a> [monitoring-vm-ip](#output\_monitoring-vm-ip) | Monitoring VM static IP address |
 <!-- END_TF_DOCS -->

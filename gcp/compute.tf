@@ -1,5 +1,6 @@
 resource "google_compute_address" "monitoring" {
-  name = "monitoring"
+  name         = "monitoring"
+  network_tier = "STANDARD"
 }
 
 resource "google_compute_instance" "monitoring" {
