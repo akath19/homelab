@@ -1,5 +1,5 @@
 locals {
-  ips = concat(var.cloudflare-ranges, var.current-home-ip)
+  ips = concat(var.cloudflare-ranges, [var.current-home-ip])
 }
 
 resource "google_compute_firewall" "monitoring" {
