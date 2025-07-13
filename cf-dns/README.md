@@ -16,7 +16,6 @@ This module holds all my personal domain CloudFlare DNS entries
 | Name | Version |
 |------|---------|
 | <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 5.6.0 |
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.67.1 |
 
 ## Modules
 
@@ -26,10 +25,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [cloudflare_dns_record.monitoring-vm-gcp](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/dns_record) | resource |
-| [cloudflare_dns_record.ntfy-vm-gcp](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/dns_record) | resource |
 | [cloudflare_dns_record.truenas-dns-entry](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/dns_record) | resource |
-| [tfe_outputs.gcp](https://registry.terraform.io/providers/hashicorp/tfe/0.67.1/docs/data-sources/outputs) | data source |
 
 ## Inputs
 

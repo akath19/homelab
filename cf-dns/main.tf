@@ -9,8 +9,3 @@ terraform {
     }
   }
 }
-
-data "tfe_outputs" "gcp" {
-  organization = "akath"
-  workspace    = "gcp-resources"
-}
