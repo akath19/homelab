@@ -17,3 +17,8 @@ variable "tfe-sa" {
   type        = string
   description = "Terraform Cloud SA email"
 }
+
+variable "current-home-ip" {
+  type        = string
+  description = "Current home IP for connection to monitoring VM"
+}
