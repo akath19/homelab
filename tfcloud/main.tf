@@ -9,8 +9,3 @@ terraform {
     }
   }
 }
-
-data "tfe_outputs" "gcp-dynamic-credentials" {
-  organization = "akath"
-  workspace    = "gcp-dynamic-credentials"
-}
